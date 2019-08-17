@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>React Hello World</title>
+  <link href="main.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div id="application-root">
+            <script
+            src="https://unpkg.com/react@16/umd/react.development.js">
+          </script>
+          <script
+            src="https://unpkg.com/react-dom@16/umd/react-dom.development.js">
+          </script>
+          <script
+          src="https://unpkg.com/babel-standalone@6/babel.min.js">
+        </script>
+          <script type="text/babel">
+            function App(props) {
+              return (
+                <main>
+                  {props.children}
+                </main>
+              );
+            }
+
+// Nested elements inside the App
+            ReactDOM.render(
+              <App className='resume-header'> 	              
+                <h1> Sally Student </h1> 
+                <section>
+                  <address>sally.student@gmail.com<br/>
+                    999.999.9999<br/>
+                  </address>
+                </section> 
+                <section class="Education">
+        <header>
+          <h2>Education </h2>
+        </header>
+          <div className="educationinfo">       
+            <h3>Purdue University</h3>
+            <h4>Computer Sciences </h4>
+            <h5>2002-2006</h5>
+          </div>
+      </section>
+      
+      <section className="Employment">
+        <header>
+          <h2>Employment</h2>
+        </header>
+          <div className="job1">
+            <h3>Website Design Co.</h3>
+            <h4>Front-End Web Developer</h4>
+            <h5>August 2011-Present</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+          </div>
+          <div className="job2">
+            <h3>Blackbaud, Inc.</h3>
+            <h4>Support Analyst</h4>
+            <h5>May 2008-August 2011</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+          </div>
+        </section>>
+
+              </App>,
+            document.querySelector('#application-root')
+            );
+          </script>
+        </div>
+</body>
+</html>

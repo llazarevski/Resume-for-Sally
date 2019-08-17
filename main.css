@@ -1,0 +1,34 @@
+*{
+    font-family: "Cinzel", sans-serif;
+    background-color: beige;
+    
+  }
+  
+  .sallypic{
+    float: left;
+    width: 50px;
+    margin: 20px;
+  }
+  
+  .educationinfo, .job1, .job2 {
+    margin-left: 15px;
+    margin-bottom: 5px;
+    font-color: #5e5c54;
+  }
+  
+  h1 {
+    Font-size: 36px;
+    margin-bottom: 10px;
+    font-weight: 900;
+  }
+  h2 {
+    font-size: 30px;
+    font-weight: 700px;
+  }
+  h3, h4, h5 {
+    margin: 10px 0 5px 0;
+  }
+  
+  h4, h5 {
+    font-weight: 400;
+  }
